@@ -8,6 +8,14 @@
 
 A simple CLI password generator for Node.js
 
+## Install
+
+To install passwordy run the following command:
+
+```shell
+npm i -g passwordy
+```
+
 ## Usage
 
 In order to use passwordy you can simply do:
