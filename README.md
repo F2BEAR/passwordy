@@ -2,7 +2,6 @@
 
 <p>
     <a href="https://github.com/F2BEAR/passwordy/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green"></a>
-    <a href="https://github.com/F2BEAR/passwordy"><img src="https://img.shields.io/github/package-json/v/F2BEAR/passwordy"></a>
     <a href="https://www.npmjs.com/package/passwordy"><img src="https://img.shields.io/npm/v/passwordy?color=brigthgreen"></a>
 </p>
 
