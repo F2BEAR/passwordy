@@ -1,6 +1,6 @@
 {
   "name": "passwordy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple secure password generator",
   "main": "bin/index.js",
   "preferGlobal": true,
@@ -8,7 +8,9 @@
     "passwordy": "bin/index.js"
   },
   "scripts": {
-    "start": "node . -h"
+    "start": "node .",
+    "commit": "cz",
+    "release": "semantic-release"
   },
   "author": "F2BEAR",
   "license": "MIT",
@@ -29,5 +31,15 @@
     "cli",
     "password-generator",
     "node.js"
-  ]
+  ],
+  "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^19.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

@@ -1,8 +1,18 @@
 # Passwordy
 
 <p>
-    <a href="https://github.com/F2BEAR/passwordy/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green"></a>
-    <a href="https://www.npmjs.com/package/passwordy"><img src="https://img.shields.io/npm/v/passwordy?color=brigthgreen"></a>
+    <a href="https://github.com/F2BEAR/passwordy/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
+    </a>
+    <a href="https://www.npmjs.com/package/passwordy">
+        <img src="https://img.shields.io/npm/v/passwordy?color=brigthgreen" alt="npm version">
+    </a>
+    <a href="http://commitizen.github.io/cz-cli/">
+        <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly">
+    </a>
+    <a href="https://github.com/semantic-release/semantic-releasey">
+        <img src="https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release" alt="semantic-release: angular">
+    </a>
 </p>
 
 A simple CLI password generator for Node.js
