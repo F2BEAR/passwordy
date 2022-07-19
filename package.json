@@ -7,6 +7,10 @@
   "bin": {
     "passwordy": "bin/index.js"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "scripts": {
     "start": "node .",
     "commit": "cz",
