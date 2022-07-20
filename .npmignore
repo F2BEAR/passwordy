@@ -1,4 +1,5 @@
 src/*
 .github/*
 .releaserc
+rollup.config.js
 tsconfig.json

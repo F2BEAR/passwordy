@@ -1,6 +1,6 @@
 {
   "name": "passwordy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple secure password generator",
   "type": "module",
   "main": "bin/index.min.js",
