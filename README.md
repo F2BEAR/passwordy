@@ -7,6 +7,9 @@
     <a href="https://www.npmjs.com/package/passwordy">
         <img src="https://img.shields.io/npm/v/passwordy?color=brigthgreen" alt="npm version">
     </a>
+    <a href="https://codecov.io/gh/F2BEAR/passwordy" > 
+        <img src="https://codecov.io/gh/F2BEAR/passwordy/branch/main/graph/badge.svg?token=ZMRER2WKPG"/> 
+    </a>
     <a href="http://commitizen.github.io/cz-cli/">
         <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly">
     </a>
@@ -32,7 +35,9 @@ In order to use passwordy you can simply do:
 passwordy <options>
 ```
 
-> If you don't specify any option Passwordy will generate an 8 character password containing letters, numbers and symbols. 
+> **Note**
+> 
+>If you don't specify any option Passwordy will generate an 8 character password containing letters, numbers and symbols. 
 
 ## Commands
 

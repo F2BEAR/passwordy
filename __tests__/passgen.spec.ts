@@ -9,8 +9,12 @@ describe('Tests the passgen.ts functions', () => {
         let result = createPassword(8, false)
         expect(/^(\D)+$/gmi.test(result)).toBeTruthy()
     })
-    test('createPassword() should return a strong password without numbers if hasSymbols is set to false', () => {
+    test('createPassword() should return a strong password without symbols if hasSymbols is set to false', () => {
         let result = createPassword(8, true, false)
         expect(/^(\w)+$/gmi.test(result)).toBeTruthy()
+    })
+    test('createPassword() should return a strong password without numbers or symbols if both boolean parameters are set to false', () => {
+        let result = createPassword(8, false, false)
+        expect(/^\w\D+$/gmi.test(result)).toBeTruthy()
     })
 })
