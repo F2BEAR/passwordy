@@ -17,6 +17,16 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org
+      - name: test
+        run: npm test
+      - name: codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage/clover.xml
+          flags: unittests
+          name: passwordy-codecov
+          fail_ci_if_error: true 
+          verbose: true
       - name: build
         run: npm install && npm run build:prod
       - name: release

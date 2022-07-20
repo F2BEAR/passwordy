@@ -1,5 +1,5 @@
 import crypto from 'crypto'
-import bcrypt from 'bcrypt'
+import * as bcrypt from 'bcrypt'
 const genSalt = (length:number) => {
     return crypto.randomBytes(Math.ceil(length/2))
         .toString('hex') 
