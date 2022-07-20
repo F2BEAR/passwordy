@@ -2,10 +2,11 @@
   "name": "passwordy",
   "version": "1.0.2",
   "description": "A simple secure password generator",
-  "main": "bin/index.js",
+  "type": "module",
+  "main": "bin/index.min.js",
   "preferGlobal": true,
   "bin": {
-    "passwordy": "bin/index.js"
+    "passwordy": "bin/index.min.js"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -14,33 +15,52 @@
   "scripts": {
     "start": "node .",
     "commit": "cz",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "build:dev": "rollup -c -w",
+    "build:prod": "set NODE_ENV=production&& rollup -c"
   },
   "author": "F2BEAR",
   "license": "MIT",
+  "types": "bin/index.d.ts",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chalk": "^5.0.1",
+    "commander": "^8.3.0",
+    "gradient-string": "^2.0.1",
+    "log-symbols": "^5.1.0",
+    "zod": "^3.17.9"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/bcrypt": "^5.0.0",
+    "@types/gradient-string": "^1.1.2",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "rollup": "^2.77.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-license": "^2.8.1",
+    "rollup-plugin-preserve-shebang": "^1.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "semantic-release": "^19.0.3",
+    "terser": "^5.14.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/F2BEAR/passwordy"
   },
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "commander": "^8.3.0"
-  },
+  "homepage": "https://github.com/F2BEAR/passwordy/blob/master/README.md",
   "bugs": {
     "url": "https://github.com/F2BEAR/passwordy/issues"
   },
-  "homepage": "https://github.com/F2BEAR/passwordy/blob/master/README.md",
   "keywords": [
     "password",
     "cli",
     "password-generator",
     "node.js"
   ],
-  "devDependencies": {
-    "commitizen": "^4.2.5",
-    "cz-conventional-changelog": "^3.3.0",
-    "semantic-release": "^19.0.3"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

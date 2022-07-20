@@ -1,12 +1,12 @@
-const crypto = require('crypto')
-const bcrypt = require('bcrypt')
-const genSalt = (length) => {
+import crypto from 'crypto'
+import bcrypt from 'bcrypt'
+const genSalt = (length:number) => {
     return crypto.randomBytes(Math.ceil(length/2))
         .toString('hex') 
         .slice(0,length)
 }
 
-module.exports.hashIt = (pwd) => {
+export const hashIt = (pwd:string) => {
     const salt = genSalt(10)
     const hash = crypto.createHmac('sha512', salt)
     hash.update(pwd)
@@ -14,7 +14,7 @@ module.exports.hashIt = (pwd) => {
     return hashVal
 }
 
-module.exports.bcryptHash = async (pwd) => {
+export const bcryptHash = async (pwd:string) => {
     const salt = await bcrypt.genSalt(10)
     const hash = await bcrypt.hash(pwd, salt)
     return hash
